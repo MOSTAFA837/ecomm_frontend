@@ -1,0 +1,198 @@
+.productDetails {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    max-width: 100%;
+    padding: 80px 20px;
+    display: flex;
+    justify-content: space-between;
+
+    > div {
+        flex: 1;
+    }
+
+    @media screen and (max-width: 900px) {
+        flex-direction: column;
+    }
+}
+
+.carousel {
+    width: 50%;
+
+    // height: 8rem;
+    // margin-right: 2rem;
+
+    // transform: translateY(-10rem);
+    // max-height: 100vh;
+
+    .CarouselImage {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    @media screen and (max-width: 900px) {
+        width: 100%;
+    }
+}
+
+.rightCol {
+    margin: 50px 0 0 50px;
+    border: 2px solid rgb(216, 216, 216);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    background: rgb(236, 236, 236);
+    height: fit-content;
+
+    @media screen and (max-width: 900px) {
+        width: 100%;
+        margin: 20px 0 0 10px;
+    }
+}
+
+.detailsBlock-1,
+.detailsBlock-2,
+.detailsBlock-3 {
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgb(209, 209, 209);
+    padding-bottom: 20px;
+}
+
+.detailsBlock-1 {
+    h2 {
+        font-size: 40px;
+        letter-spacing: .2rem;
+        color: #000;
+        margin-bottom: 0.5rem;
+    }
+
+    p {
+        color: #333;
+        margin-bottom: 0.5rem;
+    }
+}
+
+.detailsBlock-2 {
+    margin: 25px 0;
+    font-size: 22px;
+
+    p {
+        color: #333;
+    }
+}
+
+.detailsBlock-3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .MuiRating-root {
+        color: rgba(220, 20, 60, 0.856);
+    }
+
+    .detailsBlock-2-span {
+        margin-right: 2.5rem;
+    }
+}
+
+.detailsBlock-4 {
+    h2 {
+        color: crimson;
+        margin-bottom: 0.5rem;
+    }
+
+    .detailsBlock-4-1 {
+        display: flex;
+        justify-content: space-between;
+
+        .detailsBlock-4-1-1 {
+            button {
+                padding: 0.5rem .8rem;
+                border: 1px solid crimson;
+                background: rgb(236, 236, 236);
+                color: black;
+                margin: 0.5rem;
+                cursor: pointer;
+                font-size: 20px;
+                width: 40px;
+                height: 40px;
+
+                &:hover {
+                    background: rgba(204, 204, 204, 0.753);
+                }
+            }
+
+            input {
+                border: none;
+                padding: 0.5vmax;
+                width: 40px;
+                text-align: center;
+                outline: none;
+                font-size: 20px;
+                color: rgba(0, 0, 0, 0.74);
+            }
+        }
+
+        .addBtn {
+            background: rgb(253, 253, 253);
+            color: crimson;
+            font-size: 20px;
+            font-weight: bold;
+            border: none;
+            outline: none;
+            padding: 1rem 2rem;
+            cursor: pointer;
+            margin-left: 20px;
+            transition: all .4s;
+            margin-right: 0.2rem;
+
+            &:hover {
+                background: crimson;
+                color: white;
+            }
+        }
+    }
+}
+
+.submiteview {
+    border: none;
+    background-color: rgb(44, 44, 44);
+    padding: .5rem 1rem;
+    margin: 1.5rem 0;
+    color: white;
+    cursor: pointer;
+    transition: all 0.5s;
+    outline: none;
+
+    &:hover {
+        background-color: black;
+        transform: scale(1.1);
+    }
+}
+
+.reviews {
+    display: flex;
+    overflow: auto;
+}
+
+.noReviews {
+    text-align: center;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.733);
+}
+
+.css-1m9128y {
+    z-index: 100;
+    position: absolute;
+    top: 95%;
+}
+
+// .css-ktslay-MuiButtonBase-root-MuiIconButton-root {
+//     opacity: 1 !important;
+//     font-size: 5rem !important;
+//     border-radius: 50% !important;
+//     background-color: rgba(0, 0, 0, 0.5);
+
+//     &:hover {
+//         background-color: antiquewhite !important;
+//     }
+// }

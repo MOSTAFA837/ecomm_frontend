@@ -1,0 +1,58 @@
+.banner {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vmin;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    background-color: rgb(231, 231, 231);
+
+    p {
+        font-size: 25px;
+        color: crimson;
+    }
+
+    h1 {
+        margin: 40px 0;
+        font-size: 35px;
+    }
+
+    a > button {
+        cursor: pointer;
+        background-color: crimson;
+        border: none;
+        color: white;
+        border-radius: 0;
+        padding: 20px;
+        transition: all 0.5s;
+        font-size: 20px;
+
+        &:hover {
+            background-color: rgba(255, 255, 255, 0);
+            color: rgb(10, 9, 9);
+        }
+    }
+}
+
+.home {
+    background-image: linear-gradient(to bottom, #c0bdbd6b 50%, #a8a8a86b );
+    .homeHeading {
+        text-align: center;
+        font-size: 1.2rem;
+        color: crimson;
+        padding: 30px 0;
+    }
+}
+
+.container {
+    display: flex;
+    width: 80vw;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 100%;
+   margin: auto;
+}

@@ -1,0 +1,122 @@
+.updateProfileContainer {
+    width: 100vw;
+    height: 100vh;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(238, 238, 238);
+    position: fixed;
+    top: 0%;
+    left: 0;
+
+    .updateProfileBox {
+        background-color: rgb(236, 235, 235);
+        text-align: center;
+        color: rgba(0, 0, 0, 0.664);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        font-size: 25px;
+        padding: 2rem;
+        border-radius: 10px;
+        width: 70%;
+        margin: auto;
+
+        .updateProfileForm {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: auto;
+            padding: 2rem;
+            justify-content: space-evenly;
+            height: 70%;
+            transition: all 0.5s;
+
+            > div {
+                display: flex;
+                width: 100%;
+                align-items: center;
+                margin-bottom: 8px;
+
+                > input {
+                    padding: 1rem 4rem;
+                    padding-right: 1rem;
+                    width: 100%;
+                    box-sizing: border-box;
+                    border: 1px solid rgba(0, 0, 0, 0.267);
+                    border-radius: 4px;
+                    font-size: 18px;
+                    outline: none;
+                }
+
+                svg {
+                    position: absolute;
+                    transform: translateX(1vmax);
+                    font-size: 2rem;
+                    color: rgba(0, 0, 0, 0.623);
+                }
+            }
+        }
+
+        #updateProfileImage {
+            > img {
+                width: 3rem;
+                height: 3rem;
+                border-radius: 50%;
+                margin: 1vmax;
+            }
+
+            > input {
+                display: flex;
+                padding: 0%;
+
+                &::file-selector-button {
+                    cursor: pointer;
+                    width: 100%;
+                    z-index: 2;
+                    height: 5vh;
+                    border: none;
+                    margin: 0%;
+                    font-size: 18px;
+                    transition: all 0.5s;
+                    padding: 0 1rem;
+                    color: rgba(0, 0, 0, 0.623);
+                    background-color: rgb(255, 255, 255);
+
+                    &:hover {
+                        background-color: rgb(235, 235, 235);
+                    }
+                }
+            }
+        }
+
+        .updateProfileBtn {
+            border: none;
+            background-color: var(--main_color_100);
+            color: white;
+            font-size: 18px;
+            width: 100%;
+            padding: .5rem;
+            cursor: pointer;
+            transition: all 0.5s;
+            border-radius: 4px;
+            outline: none;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.219);
+
+            &:hover {
+                background-color: var(--main-color_70);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .updateProfileContainer {
+        padding-top: 10%;
+        background-color: white;
+
+        .updateProfileBox {
+            height: 95vh;
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,221 @@
+.confirmOrderPage {
+    height: 100vh;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 6fr 3fr;
+
+    div {
+        .confirmshippingArea {
+            padding: 5vmax;
+            padding-bottom: 0%;
+
+            > p {
+                font: 400 1.8vmax "Roboto";
+            }
+
+            .confirmshippingAreaBox {
+                div {
+                    display: flex;
+                    margin: 1vmax 0;
+
+                    > p {
+                        color: black;
+                    }
+
+                    > span {
+                        margin: 0 1vmax;
+                        color: #616161;
+                    }
+                }
+            }
+        }
+
+        .confirmCartItems {
+            padding: 5vmax;
+            padding-top: 2vmax;
+
+            > p {
+                font: 400 1.8vmax "Roboto";
+            }
+
+            .confirmCartItemsContainer {
+                max-height: 20vmax;
+                overflow-y: auto;
+
+                > div {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin: 2vmax 0;
+
+                    > img {
+                        width: 3vmax;
+                    }
+
+                    > a {
+                        color: #575757;
+                        margin: 0 2vmax;
+                        width: 60%;
+                        text-decoration: none;
+                    }
+
+                    > span {
+                        color: #5e5e5e;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.order {
+    border-left: 1px solid rgba(0, 0, 0, 0.247);
+
+    .orderSummary {
+        padding: 7vmax;
+
+        > p {
+            text-align: center;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.267);
+            padding: 1vmax;
+            width: 100%;
+            margin: auto;
+            box-sizing: border-box;
+        }
+
+        div {
+            div {
+                display: flex;
+                justify-content: space-between;
+                margin: 2vmax 0;
+
+                > span {
+                    color: rgba(0, 0, 0, 0.692);
+                }
+            }
+        }
+
+        .orderSummaryTotal {
+            display: flex;
+            justify-content: space-between;
+            border-top: 1px solid rgba(0, 0, 0, 0.363);
+            padding: 2vmax 0;
+        }
+
+        > button {
+            background-color: var(--main_color_100);
+            color: white;
+            width: 100%;
+            padding: 1vmax;
+            border: none;
+            margin: auto;
+            cursor: pointer;
+            transition: 0.5s;
+
+            &:hover {
+                background-color:var(--main_color_70);
+            }
+        }
+    }
+}
+
+.confirmshippingAreaBox,
+.confirmCartItemsContainer {
+    margin: 2vmax;
+}
+
+@media screen and (max-width: 600px) {
+    .confirmOrderPage {
+        grid-template-columns: 1fr;
+        height: unset;
+
+        div {
+            &:last-child {
+                border-left: 0;
+                border-top: 1px solid rgba(0, 0, 0, 0.247);
+            }
+
+            .confirmshippingArea {
+                > p {
+                    // font: 400 6vw "Roboto";
+               
+                }
+
+                .confirmshippingAreaBox {
+                    > div {
+                        display: flex;
+                        margin: 6vw 0;
+
+                        > p {
+                            font: 400 4vw "Roboto";
+                        }
+
+                        > span {
+                            font: 100 4vw "Roboto";
+                        }
+                    }
+                }
+            }
+
+            .confirmCartItems {
+                > p {
+                    font: 400 6vw "Roboto";
+                }
+
+                .confirmCartItemsContainer {
+                    max-height: 50vw;
+
+                    div {
+                        // font: 400 4vw "Roboto";
+                        margin: 4vw 0;
+
+                        > img {
+                            width: 10vw;
+                        }
+
+                        > a {
+                            margin: 0;
+                            width: 30%;
+                        }
+
+                        > span {
+                            // font: 100 4vw "Roboto";
+                       
+                        }
+                    }
+                }
+            }
+        }
+
+        .order {
+            .orderSummary {
+                padding: 12vw;
+
+                > p {
+                    // font: 400 6vw "Roboto";
+                    padding: 4vw;
+                }
+
+                div {
+                    > div {
+                        // font: 300 4vw "Roboto";
+                   
+                    }
+                }
+
+                .orderSummaryTotal {
+                    font: 300 4vw "Roboto";
+                    padding: 5vw 0;
+                }
+
+                > button {
+                    padding: 4vw;
+                    margin: 4vw auto;
+
+                    // font: 400 4vw "Roboto";
+               
+                }
+            }
+        }
+    }
+}
